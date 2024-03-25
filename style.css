@@ -1,13 +1,16 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
-/* 
+
 .option-one-screen, 
 .option-two-screen, 
-.option-one-end, 
-.option-two-end  {
+.option-two-end,
+.option-three,
+.option-four,
+.option-three-end, 
+.option-four-end  {
    display:none;
 }
-*/
+
 
 
 /* Feel free to change any of the styling below!*/
@@ -15,15 +18,15 @@ html,
 body {
     margin: 0;
     padding: 0;
+    color: lightpink;
 }
 
 /* Style the body with a background color or image if desired */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     text-align: center;
     padding: 20px;
-}
+    background-color: black;
+  font-family: "Times New Roman", Times, serif;
 
 /* Style the title of your story */
 .title {
@@ -34,8 +37,8 @@ body {
 
 /* Style the story opening container */
 .story-opening {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: white;
+    border: 1px solid black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -64,8 +67,8 @@ button {
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
-    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    background-color: lightpink;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -73,16 +76,18 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ffe3ed;
 }
 
 /* Style the screens for option one and option two */
 .option-one-screen,
 .option-two-screen,
 .option-one-end,
+.option-three-end,
+.option-four-end,
 .option-two-end {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: white;
+    border: 1px solid black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
