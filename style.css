@@ -18,7 +18,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    color: lightpink;
+    color: #DF168B;
 }
 
 /* Style the body with a background color or image if desired */
@@ -37,12 +37,17 @@ body {
 
 /* Style the story opening container */
 .story-opening {
+    padding: 20px;
     background-color: white;
     border: 1px solid black;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+  .myButtons {
+    display: flex;
+    justify-content: center;
+  }
 
 /* Style the story image */
 .story-opening img {
@@ -68,7 +73,7 @@ button {
     padding: 10px 20px;
     margin: 10px;
     font-family: "Times New Roman", Times, serif;
-    background-color: lightpink;
+    background-color: #DF168B;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -76,7 +81,7 @@ button {
 }
 
 button:hover {
-    background-color: #ffe3ed;
+    background-color: #f035a2;
 }
 
 /* Style the screens for option one and option two */

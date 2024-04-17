@@ -9,27 +9,36 @@ let optionThreeEnd = document.querySelector(".option-three-end");
 let optionFour = document.querySelector(".option-four");
 let optionFourEnd = document.querySelector(".option-four-end");
 let buttons = document.querySelector(".buttons");
-
-
+let h1 = document.querySelector("h1");
+  
 
 // When you're ready to make event handlers, uncomment the code below. 
 //  - Then fill in the blanks with the correct variables.
 
 optionOne.addEventListener('click', function(){
-  optionOneScreen.style = "visible";
-  optionThree.style = "visible";
-   optionFour.style = "visible";
-)};
+  optionOneScreen.style.display = "block";
+  optionThree.style.display = "block";
+  optionFour.style.display = "block";
+});
 
-buttons.optionTwo.addEventListener('click', function(){
-  optionTwoScreen.style.display = "visible";
+optionThree.addEventListener('click', function(){
+  optionThreeEnd.style.display = "block";
+});
 
+optionFour.addEventListener('click', function(){
+  optionFourEnd.style.display = "block";
+});
+
+optionTwo.addEventListener('click', function(){
+  optionTwoScreen.style.display = "block";
 });
 
 optionTwoScreen.addEventListener('dblclick', function(){
-  optionTwoEnd.style.display = "visible";
-
+  optionTwoEnd.style.display = "block";
 });
+
+var sound = new Audio('alex-productions-lifestyle.mp3');
+sound.play();
 // INSERT_VARIABLE.addEventListener('click', function(){
 
 // });
