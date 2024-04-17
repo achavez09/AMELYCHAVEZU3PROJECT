@@ -10,12 +10,15 @@ let optionFour = document.querySelector(".option-four");
 let optionFourEnd = document.querySelector(".option-four-end");
 let buttons = document.querySelector(".buttons");
 let h1 = document.querySelector("h1");
-  
-
+var sound1 = new Audio('success-1-6297.mp3');
+var sound2 = new Audio('mixkit-sad-game-over-trombone-471.mp3');
+var sound3 = new Audio('wrong-place-129242.mp3');
 // When you're ready to make event handlers, uncomment the code below. 
 //  - Then fill in the blanks with the correct variables.
 
+
 optionOne.addEventListener('click', function(){
+  sound1.play();
   optionOneScreen.style.display = "block";
   optionThree.style.display = "block";
   optionFour.style.display = "block";
@@ -23,22 +26,24 @@ optionOne.addEventListener('click', function(){
 
 optionThree.addEventListener('click', function(){
   optionThreeEnd.style.display = "block";
+  sound1.play();
 });
 
 optionFour.addEventListener('click', function(){
   optionFourEnd.style.display = "block";
+  sound2.play();
 });
 
 optionTwo.addEventListener('click', function(){
   optionTwoScreen.style.display = "block";
+  sound2.play();
 });
 
 optionTwoScreen.addEventListener('dblclick', function(){
   optionTwoEnd.style.display = "block";
+  sound3.play();
 });
 
-var sound = new Audio('alex-productions-lifestyle.mp3');
-sound.play();
 // INSERT_VARIABLE.addEventListener('click', function(){
 
 // });

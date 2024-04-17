@@ -1,14 +1,16 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
-
-.option-one-screen, 
-.option-two-screen, 
+.title{
+  font-family: "Lucida Console", "Courier New", monospace
+}
+.option-one-screen,
+.option-two-screen,
 .option-two-end,
 .option-three,
 .option-four,
-.option-three-end, 
-.option-four-end  {
-   display:none;
+.option-three-end,
+.option-four-end {
+  display: none;
 }
 
 
@@ -16,104 +18,106 @@
 /* Feel free to change any of the styling below!*/
 html,
 body {
-    margin: 0;
-    padding: 0;
-    color: #DF168B;
+  margin: 0;
+  padding: 0;
+  color: #D51083;
 }
 
 /* Style the body with a background color or image if desired */
 body {
-    text-align: center;
-    padding: 20px;
-    background-color: black;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
   font-family: "Times New Roman", Times, serif;
 
-/* Style the title of your story */
-.title {
+  /* Style the title of your story */
+  .title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-}
+    color: #7227a1
+  }
 
-/* Style the story opening container */
-.story-opening {
+  /* Style the story opening container */
+  .story-opening {
     padding: 20px;
     background-color: white;
-    border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+  }
 
   .myButtons {
     display: flex;
     justify-content: center;
   }
 
-/* Style the story image */
-.story-opening img {
+  /* Style the story image */
+  .story-opening img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
-}
+  }
 
-/* Style the story opening message */
-.story-opening h1 {
+  /* Style the story opening message */
+  .story-opening h1 {
     font-size: 20px;
     margin-bottom: 20px;
-}
+  }
 
-/* Style the buttons container */
-.buttons {
+  /* Style the buttons container */
+  .buttons {
     margin: 20px;
-}
+  }
 
-/* Style the option buttons */
-button {
+  /* Style the option buttons */
+  button {
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
     font-family: "Times New Roman", Times, serif;
-    background-color: #DF168B;
+    background-color: #D51083;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
 
-button:hover {
-    background-color: #f035a2;
-}
+  button:hover {
+    background-color: #A60C66;
+  }
 
-/* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
-.option-one-end,
-.option-three-end,
-.option-four-end,
-.option-two-end {
+  /* Style the screens for option one and option two */
+  .option-one-screen,
+  .option-two-screen,
+  .option-one-end,
+  .option-three-end,
+  .option-four-end,
+  .option-two-end {
     background-color: white;
-    border: 1px solid black;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
-}
+  }
 
-/* Style the images in the screens */
-.option-one-screen img,
-.option-two-screen img,
-.option-one-end img,
-.option-two-end img {
+  /* Style the images in the screens */
+  .option-one-screen img,
+  .option-two-screen img,
+  .option-one-end img,
+  .option-three-end img,
+  .option-four-end img,
+  .option-two-end img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
-}
+  }
 
-/* Style the text in the screens */
-.option-one-screen h1,
-.option-two-screen h1,
-.option-one-end h1,
-.option-two-end h1 {
+  /* Style the text in the screens */
+  .option-one-screen h1,
+  .option-two-screen h1,
+  .option-three-end h1,
+  .option-four-end h1,
+  .option-one-end h1,
+  .option-two-end h1 {
     font-size: 20px;
     margin-bottom: 20px;
-}
+  }
