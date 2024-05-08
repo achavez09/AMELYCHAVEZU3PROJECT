@@ -9,7 +9,6 @@ let optionThreeEnd = document.querySelector(".option-three-end");
 let optionFour = document.querySelector(".option-four");
 let optionFourEnd = document.querySelector(".option-four-end");
 let buttons = document.querySelector(".buttons");
-let h1 = document.querySelector("h1");
 var sound1 = new Audio('success-1-6297.mp3');
 var sound2 = new Audio('mixkit-sad-game-over-trombone-471.mp3');
 var sound3 = new Audio('wrong-place-129242.mp3');
